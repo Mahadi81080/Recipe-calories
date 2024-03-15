@@ -1,0 +1,57 @@
+[
+    {
+      "recipe_id": 1,
+      "recipe_name": "Chicken Stir Fry",
+      "recipe_image": "https://i.postimg.cc/Hks4kCjb/images.jpg",
+      "short_description": "A delicious and healthy chicken stir fry.",
+      "ingredients": ["550 g chicken", "120 ml soy sauce", "200 g basil leaf", "400 g mushroom"],
+      "preparing_time": "30 min",
+      "calories": "320 calories"
+    },
+    {
+      "recipe_id": 2,
+      "recipe_name": "Spaghetti Carbonara",
+      "recipe_image": "https://i.postimg.cc/Sxv8Q2Bp/images-1.jpg",
+      "short_description": "Classic Italian pasta dish with creamy sauce.",
+      "ingredients": ["400 g spaghetti", "200 g pancetta", "4 eggs", "100 g parmesan cheese"],
+      "preparing_time": "25 min",
+      "calories": "450 calories"
+    },
+    {
+      "recipe_id": 3,
+      "recipe_name": "Vegetable Curry",
+      "recipe_image": "https://i.postimg.cc/Nf5DYcnS/download-3.jpg",
+      "short_description": "A flavorful vegetarian curry with assorted vegetables.",
+      "ingredients": ["300 g potatoes", "200 g carrots", "150 g peas", "1 can coconut milk"],
+      "preparing_time": "40 min",
+      "calories": "280 calories"
+    },
+    {
+      "recipe_id": 4,
+      "recipe_name": "Grilled Salmon",
+      "recipe_image": "https://i.postimg.cc/nVGDjwy2/download-2.jpg",
+      "short_description": "Healthy grilled salmon with lemon and herbs.",
+      "ingredients": ["4 salmon fillets", "2 lemons", "Fresh dill", "Olive oil"],
+      "preparing_time": "20 min",
+      "calories": "280 calories"
+    },
+    {
+      "recipe_id": 5,
+      "recipe_name": "Caprese Salad",
+      "recipe_image": "https://i.postimg.cc/C5c5v9YV/17-PAIR2-super-Jumbo.jpg",
+      "short_description": "Classic Italian salad with tomatoes, mozzarella, and basil.",
+      "ingredients": ["4 tomatoes", "200 g mozzarella cheese", "Fresh basil leaves", "Balsamic glaze"],
+      "preparing_time": "10 min",
+      "calories": "180 calories"
+    },
+    {
+      "recipe_id": 6,
+      "recipe_name": "Banana Bread",
+      "recipe_image": "https://i.postimg.cc/PxGwYGf3/download.jpg",
+      "short_description": "Moist and delicious homemade banana bread.",
+      "ingredients": ["3 ripe bananas", "200 g flour", "100 g sugar", "100 g butter"],
+      "preparing_time": "60 min",
+      "calories": "220 calories"
+    }
+  ]
+  
