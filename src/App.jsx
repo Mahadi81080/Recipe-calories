@@ -9,6 +9,8 @@ import Banner from "./Components/Banner/Banner";
 function App() {
   const [foods, setfoods] = useState([]);
   const [cartItem, setCartItem] = useState([]);
+  const [cookCount, setCookCount] = useState(0);
+  // let count = 0;
   useEffect(() => {
     fetch("Recips.json")
       .then((res) => res.json())
@@ -16,13 +18,17 @@ function App() {
   }, []);
   const handleAddCart = (food) => {
     // console.log(food)
-    setCartItem([...cartItem, food]);
+    setCartItem([...cartItem, food]); 
+    // const cookCount = document.getElementById("cook-count");
+    // count = count + 1;
+    // cookCount.innerText = count;
+    setCookCount(cookCount + 1);
   };
-  console.log(cartItem);
+  // console.log(cartItem);
   return (
     <>
-    <Header></Header>
-    <Banner></Banner>
+      <Header></Header>
+      <Banner></Banner>
       <section className="flex justify-between gap-8 mx-10">
         <div className="grid grid-cols-2 gap-4">
           {foods.map((food) => {
@@ -63,13 +69,15 @@ function App() {
                       <span>
                         <CiTimer />
                       </span>
-                      <h2 className="text-base font-normal">30 minutes</h2>
+                      <h2 className="text-base font-normal">
+                        {preparing_time}
+                      </h2>
                     </div>
                     <div className="flex items-center gap-2">
                       <span>
                         <FaFire />
                       </span>
-                      <h2 className="text-base font-normal">600 calories</h2>
+                      <h2 className="text-base font-normal">{calories}</h2>
                     </div>
                   </div>
                   <button
@@ -86,7 +94,7 @@ function App() {
 
         <div className="border p-3 rounded-xl">
           <h1 className="text-2xl font-semibold text-center border-b border-gray-200 pb-3">
-            Want to cook: 01
+            Want to cook: <span  id="cook-count">{cookCount}</span>
           </h1>
           <div className="flex justify-center items-center gap-14 my-3 text-lg font-medium">
             <h3></h3>
@@ -98,7 +106,10 @@ function App() {
           {cartItem.map((cart, index) => {
             const { recipe_name, preparing_time, calories } = cart;
             return (
-              <div key={cart.id} className="bg-base-200 flex justify-center items-center gap-5 p-4 rounded-xl mb-3 text-base font-normal">
+              <div
+                key={cart.id}
+                className="bg-base-200 flex justify-center items-center gap-5 p-4 rounded-xl mb-3 text-base font-normal"
+              >
                 <h5>{index + 1}</h5>
                 <h5>{recipe_name}</h5>
                 <h5>{preparing_time}</h5>
@@ -109,22 +120,6 @@ function App() {
               </div>
             );
           })}
-          {/* <div className="overflow-x-auto">
-            <table className="table">
-              <thead>
-                <tr>
-                  <th></th>
-                  <th>Name</th>
-                  <th>Time</th>
-                  <th>Calories</th>
-                  <th></th>
-                </tr>
-              </thead>
-              <tbody>
-                
-              </tbody>
-            </table>
-          </div> */}
         </div>
       </section>
     </>
