@@ -1,7 +1,8 @@
 import { FaRegUserCircle } from "react-icons/fa";
+import { IoSearchOutline } from "react-icons/io5";
 const Header = () => {
   return (
-    <div className="mx-10 my-8">
+    <div className="lg:mx-10 my-8">
       <div className="navbar bg-base-100">
         <div className="navbar-start">
           <div className="dropdown">
@@ -59,21 +60,14 @@ const Header = () => {
         </div>
         <div className="navbar-end gap-3">
           <label className="input bg-gray-200 rounded-full flex items-center gap-4">
-          <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 16 16"
-              fill="currentColor"
-              className="w-4 h-4 opacity-70"
-            >
-              <path
-                fillRule="evenodd"
-                d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
-                clipRule="evenodd"
-              />
-            </svg>
+            <span>
+              <IoSearchOutline />
+            </span>
             <input type="text" className="grow" placeholder="Search" />
           </label>
-          <span  className="bg-green-400 p-2 text-xl rounded-full"><FaRegUserCircle /></span>
+          <span className="bg-green-400 p-2 text-xl rounded-full">
+            <FaRegUserCircle />
+          </span>
         </div>
       </div>
     </div>
