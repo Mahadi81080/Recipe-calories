@@ -165,6 +165,7 @@ function App() {
               <h3>Name</h3>
               <h3>time</h3>
               <h3>Calories</h3>
+              <h3></h3>
             </div>
             {currentCartItem.map((currentcart, index) => {
               const { recipe_name, preparing_time, calories } = currentcart;
@@ -180,11 +181,11 @@ function App() {
                 </div>
               );
             })}
-            <div className="flex justify-center items-center gap-14 my-3 text-base font-normal">
-              <h3>
+            <div className="flex justify-center items-center gap-14 my-3 text-xs font-normal mt-5">
+              <h3 className="border border-info p-4 rounded-xl shadow-md ">
                 Total Time: <span>{time} min</span>
               </h3>
-              <h3>Total Calories:<span>{calori}</span></h3>
+              <h3 className="border border-info p-4 rounded-xl shadow-md">Total Calories:<span>{calori}</span></h3>
             </div>
           </div>
         </div>
